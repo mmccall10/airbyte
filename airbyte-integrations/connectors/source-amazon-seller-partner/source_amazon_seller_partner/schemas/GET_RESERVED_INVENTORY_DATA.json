@@ -1,0 +1,56 @@
+{
+    "title": "Get Reserved Inventory Data",
+    "description": "Provides data about the number of reserved units in a seller's inventory. Content updated in near-real time.",
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "properties": {
+        "sku": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "fnsku": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "asin": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "product-name": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "reserved_qty": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "reserved_customerorders": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "reserved_fc-transfers": {
+            "type": [
+                "null",
+                "string"
+            ]
+        },
+        "reserved_fc-processing": {
+            "type": [
+                "null",
+                "string"
+            ]
+        }
+    }
+}

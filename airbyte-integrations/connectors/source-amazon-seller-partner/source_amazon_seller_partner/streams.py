@@ -1519,3 +1519,7 @@ class FlatFileV2SettlementV2Reports(IncrementalReportsAmazonSPStream):
             params = {"nextToken": next_value}
             if not next_value:
                 complete = True
+
+
+class ReservedInventoryReport(IncrementalReportsAmazonSPStream):
+    name = "GET_RESERVED_INVENTORY_DATA"
