@@ -1591,6 +1591,11 @@ class FbaReimbursementsReports(IncrementalReportsAmazonSPStream):
 
     name = "GET_FBA_REIMBURSEMENTS_DATA"
 
+
+class ReservedInventoryReport(IncrementalReportsAmazonSPStream):
+    report_name = "GET_RESERVED_INVENTORY_DATA"
+
+
 class FlatFileV2SettlementV2Reports(IncrementalReportsAmazonSPStream):
     name = "GET_V2_SETTLEMENT_REPORT_DATA_FLAT_FILE_V2"
     cursor_field = "dataEndTime"
@@ -1660,7 +1665,3 @@ class FlatFileV2SettlementV2Reports(IncrementalReportsAmazonSPStream):
             params = {"nextToken": next_value}
             if not next_value:
                 complete = True
-
-
-class ReservedInventoryReport(IncrementalReportsAmazonSPStream):
-    name = "GET_RESERVED_INVENTORY_DATA"
